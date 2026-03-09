@@ -1,0 +1,4 @@
+This project fine-tunes Qwen 3.5-2B with LoRA for Arabic OCR using a 20k-sample subset of `mssqpi/Arabic-OCR-Dataset`, while the full Hugging Face dataset contains about 2.16M labeled image-text pairs.
+Each sample provides an `image` and its ground-truth `text`, making it suitable for supervised OCR training and evaluation.
+A key limitation is that the dataset mainly contains short Arabic text snippets, with viewer statistics showing image widths around 29–222 px and text lengths around 7–10 characters.
+Evaluation was done on a held-out split using OCR-focused metrics, mainly Character Error Rate (CER), where the model achieved about 0.32 CER.
